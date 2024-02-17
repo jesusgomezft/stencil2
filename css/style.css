@@ -1158,7 +1158,14 @@ p.comment-form-email, p.comment-form-author, p.comment-form-url {
 					transform:none !Important;
 		}
 }
-@media screen and (max-width:900px) {
+
+
+@media screen and (max-width:844px) {
+
+  .background{
+    width: 100%;
+    height: 690px;
+  }
 
 	.logoarea,.pagearea {
 		width:100%;
@@ -1200,7 +1207,29 @@ p.comment-form-email, p.comment-form-author, p.comment-form-url {
 			background-color: #111;
 	}
 
+  .content-wrapper{
+    margin-top: 188px;
+  }
+
+  .voucher{
+    right: 450px;
+    top: 560px;
+  }
+
+  .pricingbadge{
+    position: relative;
+    top: 185px;
+  }
+
 }
+
+@media screen and (min-width: 820px) and (max-width: 1180px){
+  .voucher{
+    right: 650px;
+    top: 560px;
+  }
+}
+
 /* Responsive */
 @media screen and (max-width:767px) {
 	.pagearea, .logoarea {
@@ -1227,6 +1256,7 @@ p.comment-form-email, p.comment-form-author, p.comment-form-url {
 @media screen and (max-width:430px) {
 	.background {
 			padding:100px 0;
+
 	}
 	 .aboutbadge.black {
 			 margin:0px auto;
