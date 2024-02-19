@@ -1317,8 +1317,9 @@ p.comment-form-email, p.comment-form-author, p.comment-form-url {
   }
 
 
+}
 
-
-
-
+.pull-left a{
+  text-decoration: none;
+  color: #555;
 }
