@@ -32,6 +32,8 @@ body {
 	line-height: 1.7;
 	font-weight:300;
 	font-family:Oswald;
+  margin: 0;
+  overflow: hidden;
 }
 h2 {line-height:1.5;}
 ol, ul {
@@ -96,9 +98,9 @@ a {text-decoration:none;}
 .background:first-child {
   background-image: url(../img/rolll.png);
   -webkit-transform: translateY(-10vh);
-  
-        
+      
 }
+
 .background:first-child .content-wrapper {
   -webkit-transform: translateY(15vh);
           transform: translateY(15vh);
@@ -284,7 +286,7 @@ font-size: 17px;
 
 
 .boton2 {
-  background-color: #3498db;
+  background-color:  rgba(22, 57, 170, 0.48);
   color: #fff;
   padding: 10px;
   text-decoration: none;
@@ -775,13 +777,19 @@ a.map {border-bottom: 1px dashed;    color: #fff;}
 }
 .pagearea a.readmore {
 	font-style: italic;
-    background-color: rgba(230, 33, 97, 0.48);
+    background-color: rgba(50, 151, 218, 0.48);
     display: inline-block;
     color: rgb(255, 255, 255);
     padding: 5px 10px;
     border-radius: 5px 20px;
     margin-top: 10px;
 	margin-bottom:10px;
+}
+
+.pagearea a.readmore:hover{
+  background-color: rgb(255, 255, 255) ;
+ color:  rgba(50, 151, 218, 0.48);
+ font-weight: bold;
 }
 
 .textwhite {color:#fff;}
@@ -1311,15 +1319,40 @@ p.comment-form-email, p.comment-form-author, p.comment-form-url {
 
 
 
-@media screen and (max-width: 844px) {
+@media screen and (max-width: 819px) {
   .background:nth-child(2) {
     display: none;
   }
 
+.img{
+  display: none;
+}
 
 }
 
 .pull-left a{
   text-decoration: none;
   color: #555;
+}
+
+
+
+video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  position: fixed; /* Cambiado de relative a fixed */
+  bottom: 0; /* Fijar el pie de página en la parte inferior */
+  width: 100%;
 }

@@ -1,98 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="">
-<meta name="author" content="">
-<link rel="icon" href="#">
-<title>STENCIL2-Entradas</title>
-<!-- CSS -->
-<link href="css/style.css" rel="stylesheet">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-<link href='https://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400italic,300italic,300,700,700italic' rel='stylesheet' type='text/css'>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="#">
+  <title>STENCIL2-Entradas</title>
+  <!-- CSS -->
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400italic,300italic,300,700,700italic' rel='stylesheet' type='text/css'>
+  <style>
+    body {
+      background: #2e2d2d; /* Fondo blanco */
+    }
+
+    .container {
+      display: flex;
+      align-items: center;
+    }
+
+    .img {
+      flex: 1;
+      padding: 20px; /* Espacio alrededor de la imagen */
+      box-sizing: border-box;
+	  
+    }
+
+    .img img {
+      max-width: 100%; /* Asegura que la imagen no sobrepase el ancho del contenedor */
+      height: auto; /* Hace que la imagen sea responsive */
+    }
+
+    .pagearea {
+      flex: 1;
+      padding: 20px; /* Espacio alrededor del contenido */
+      box-sizing: border-box;
+    }
+  </style>
 </head>
-<body style="background-image:url(img/rap.jpg);background-attachment:fixed;background-size:cover;">
+<body>
 
-<div id="loader-wrapper">
-<div id="loader"></div>
-<div class="loader-section section-left"></div>
-<div class="loader-section section-right"></div>
-</div>
+  <div id="loader-wrapper">
+    <div id="loader"></div>
+    <div class="loader-section section-left"></div>
+    <div class="loader-section section-right"></div>
+  </div>
 
-<div class="menu-outer">
+  <div class="menu-outer">
     <div class="menu-icon">
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
     </div>
     <nav>
-        <ul>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="eventos.html">EVENTOS</a></li>
-			<li><a target="_blank" href="https://jesusgomez.netlify.app/#">JG Coding</a></li>
-       </ul>
-   </nav>
-</div>
-<a class="menu-close" onClick="return true">
-    <div class="menu-icon">
-        <div class="bar"></div>
-        <div class="bar"></div>
-    </div>
-</a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="eventos.html">EVENTOS</a></li>
+        <li><a target="_blank" href="https://jesusgomez.netlify.app/#">JG Coding</a></li>
+      </ul>
+    </nav>
+  </div>
 
-<div class="fixedcallicon">
-	<i class="fa fa-phone"></i><span class="hide">Book Now - 897.645.223</span>
-</div>
-<div class="container">
-<div class="logoarea">
-<div class="intro">
-			<!-- <h1><span class="smaller wow zoomIn" data-wow-duration="2s" data-wow-delay="0.5">1044 Madison Avenue, New York, NY 10075, US</span>
-			<span class="big wow pulse" data-wow-duration="1s" data-wow-delay="0s">Beauttio</span>
-			<span class="small wow fadeIn" data-wow-duration="2s" data-wow-delay="0.5s">- HAIR SALON -</span>
-			</h1> -->
-		</div>
-		</div>
-		<div class="pagearea">
+  <a class="menu-close" onClick="return true">
+    <div class="menu-icon">
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+  </a>
+
+  <div class="fixedcallicon">
+    <i class="fa fa-phone"></i><span class="hide">Book Now - 897.645.223</span>
+  </div>
+
+  <div class="container">
+    <div class="img">
+      <img src="./img/flyer 3 fechas.png" alt="Flyer">
+    </div>
+
+	<div class="pagearea">
 		<h1 class="page-headline">Eventos</h1>
-		<i class="iconstartitle textmagenta fa fa-star"></i>
+		<!-- <i class="iconstartitle textmagenta fa fa-star"></i> -->
 		<h1 class="entry-title">Madrid: Noches Inolvidables de Hip-Hop y Alma</h1>
-			<p>Soires Naes llega a Madrid para una noche inolvidable, fusionando el rap y el soul con melodías cautivadoras. La presentación incluirá una selección única de temas emblemáticos que abarcan desde los inicios de la agrupación hasta sus últimas creaciones, prometiendo una experiencia hip-hop inigualable.<a href="#" class="readmore">Read more</a></p>
+			<p>Soires Naes llega a Madrid para una noche inolvidable, fusionando el rap y el soul con melodías cautivadoras. La presentación incluirá una selección única de temas emblemáticos que abarcan desde los inicios de la agrupación hasta sus últimas creaciones, prometiendo una experiencia hip-hop inigualable. <br><a href="#" class="readmore">Comprar</a></p>
 				
 				<h1 class="entry-title">Valencia: Ritmos Vibrantes en la Ciudad del Turia</h1>
-				<p>La magia de Soires Naes aterriza en Valencia con ritmos vibrantes que invadirán la Ciudad del Turia. La presentación destacará una sección especial, fusionando el rap con sonidos armoniosos y soul, creando una atmósfera única. Desde sus primeros éxitos hasta lo más reciente, Valencia será testigo de una noche llena de energía y conexión musical. <br><a href="#" class="readmore">Read more</a></p>
+				<p>La magia de Soires Naes aterriza en Valencia con ritmos vibrantes que invadirán la Ciudad del Turia. La presentación destacará una sección especial, fusionando el rap con sonidos armoniosos y soul, creando una atmósfera única. Desde sus primeros éxitos hasta lo más reciente, Valencia será testigo de una noche llena de energía y conexión musical. <br><a href="#" class="readmore">Comprar</a></p>
 				
 				<h1 class="entry-title">Barcelona: Viaje Musical a Través de las Épocas</h1>
-				<p>Barcelona se prepara para un viaje musical a través de las épocas con Soires Naes. La agrupación ofrecerá una experiencia única, presentando una recopilación de temas icónicos que abarcan toda su trayectoria. Desde los inicios del rap venezolano hasta las últimas tendencias, Barcelona será el escenario de una fusión de estilos que dejará una marca imborrable. <br><a href="#" class="readmore">Read more</a></p>
+				<p>Barcelona se prepara para un viaje musical a través de las épocas con Soires Naes. La agrupación ofrecerá una experiencia única, presentando una recopilación de temas icónicos que abarcan toda su trayectoria. Desde los inicios del rap venezolano hasta las últimas tendencias, Barcelona será el escenario de una fusión de estilos que dejará una marca imborrable. <br><a href="#" class="readmore">Comprar</a></p>
 				
 				<!-- <h1 class="entry-title">HAIR STYLE EVENT IN NEW YORK</h1>
 				<p>Barcelona se prepara para un viaje musical a través de las épocas con Soires Naes. La agrupación ofrecerá una experiencia única, presentando una recopilación de temas icónicos que abarcan toda su trayectoria. Desde los inicios del rap venezolano hasta las últimas tendencias, Barcelona será el escenario de una fusión de estilos que dejará una marca imborrable..<a href="#" class="readmore">Read more</a></p> -->
 				
 				
 		</div>
-	
-</div>
-<div class="clearfix"></div>
-<footer class="footer">
-<div class="container">
-	<div class="pull-left">© Copyright 2024 Made with By <a href="https://jesusgomez.netlify.app/#" >JG Coding</a></div>
 
-<div class="pull-right"> 
-	<div class="footericons">
-		<a href="#"><i class="fa fa-facebook"></i></a>
-		<a href="#"><i class="fa fa-twitter"></i></a>
-		<a href="#"><i class="fa fa-instagram"></i></a></a>
-		<!-- <a href="#"><i class="fa fa-google-plus"></i></a> -->
-	</div>
-</div>
-<div class="clearfix"></div>
-</div>
-</footer>	
-<!-- Scripts -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="js/nicescroll.js"></script>
-<script src="js/common.js"></script>
+  <div class="clearfix"></div>
+
+  <footer class="footer" >
+    <div class="container">
+      <div class="pull-left">© Copyright 2024 Made with By <a href="https://jesusgomez.netlify.app/#">JG Coding</a></div>
+      <div class="pull-right"> 
+        <div class="footericons">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a></a>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="js/nicescroll.js"></script>
+  <script src="js/common.js"></script>
 </body>
 </html>
