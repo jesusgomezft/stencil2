@@ -81,6 +81,7 @@ a {text-decoration:none;}
     transform: translateY(0);
     -webkit-transition: all 1.2s cubic-bezier(0.22, 0.44, 0, 1);
     transition: all 1.2s cubic-bezier(0.22, 0.44, 0, 1);
+    
 }
 
 body {
@@ -102,6 +103,7 @@ body {
 .background:first-child {
   background-image: url(../img/Soires\ web.png);
   -webkit-transform: translateY(-5vh);
+  filter: brightness(150%);
       
 }
 
@@ -1342,15 +1344,15 @@ p.comment-form-email, p.comment-form-author, p.comment-form-url {
 
 
 .footer {
+  position: relative;
+  z-index: 1; /* Un valor más alto que el z-index de la imagen de fondo */
   background-color: #333;
   color: white;
   padding: 20px 0;
   text-align: center;
-  position: fixed; /* Cambiado de relative a fixed */
-  bottom: 0; /* Fijar el pie de página en la parte inferior */
+  bottom: 0;
   width: 100%;
 }
-
 
 .enlaces{
   position: relative;
