@@ -64,25 +64,29 @@ a {text-decoration:none;}
 	.pull-left {float:left;}
 	.pull-right {float:right;}
 	.clearfix {clear:both;float:none;content:'';display:table;}
-.background {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  overflow: hidden;
-  will-change: transform;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  height: 130vh;
-  position: fixed;
-  width: 100%;
-  -webkit-transform: translateY(30vh);
-  transform: translateY(30vh);
-  -webkit-transition: all 1.2s cubic-bezier(0.22, 0.44, 0, 1);
-  transition: all 1.2s cubic-bezier(0.22, 0.44, 0, 1);
-  background-size: cover;
-  background-position: center top;
-  background-position-y: -10%;
+  .background {
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center top;
+    overflow: hidden;
+    will-change: transform;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    height: 800px;
+    width: 1500px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transition: all 1.2s cubic-bezier(0.22, 0.44, 0, 1);
+    transition: all 1.2s cubic-bezier(0.22, 0.44, 0, 1);
 }
+
+body {
+    margin: 0;
+}
+
 .background:before {
   content: "";
   position: absolute;
@@ -96,9 +100,14 @@ a {text-decoration:none;}
 
 }
 .background:first-child {
-  background-image: url(../img/rolll.png);
-  -webkit-transform: translateY(-10vh);
+  background-image: url(../img/Soires\ web.png);
+  -webkit-transform: translateY(-5vh);
       
+}
+
+.image-rendering {
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: optimizeQuality;
 }
 
 .background:first-child .content-wrapper {
@@ -1321,17 +1330,7 @@ p.comment-form-email, p.comment-form-author, p.comment-form-url {
 
 
 
-@media screen and (max-width: 819px) {
-  .background:nth-child(2) {
-    /* display: none; */
-    height: 900px;
-  }
 
-.img{
-  display: none;
-}
-
-}
 
 .pull-left a{
   text-decoration: none;
@@ -1340,14 +1339,6 @@ p.comment-form-email, p.comment-form-author, p.comment-form-url {
 
 
 
-video {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
 
 
 .footer {
@@ -1358,4 +1349,51 @@ video {
   position: fixed; /* Cambiado de relative a fixed */
   bottom: 0; /* Fijar el pie de página en la parte inferior */
   width: 100%;
+}
+
+
+.enlaces{
+  position: relative;
+  left: 400px;
+  top: 170px;
+  font-size: 25px;
+  font-weight: 900;
+  
+}
+
+.enlace2{
+  position: relative;
+  top: 31px;
+  color: transparent;
+}
+
+.enlace{
+  color: transparent;
+}
+
+
+
+@media screen and (max-width: 819px) {
+  .background {
+    position: relative;
+    width: 400px;
+    height: 500px;
+    margin-left: -22px;
+  }
+
+  .enlaces {
+    position: relative;
+    left:150px;
+    transform: translateY(60px);
+    font-size: 18px;
+    font-weight: 900;
+  }
+
+  .enlace{
+    color: transparent;
+  }
+
+  .enlace2{
+    color: transparent;
+  }
 }
