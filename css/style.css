@@ -1399,3 +1399,8 @@ p.comment-form-email, p.comment-form-author, p.comment-form-url {
     color: transparent;
   }
 }
+
+.imge {
+  float: left;
+  margin-right: 20px;
+}
